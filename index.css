@@ -3,21 +3,6 @@
 ============================== */
 
 
-/* --- Reset --- */
-* {
-  box-sizing: bordr-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* --- Typography & Layout --- */
-body {
-  font-family: 'Inter', sans-serif;
-  color: #222;
-  /* background-color: #fafafa; */
-  background-color: #fff;
-  line-height: 1.6;
-}
 
 /* Reusable container */
 .container {
@@ -81,7 +66,6 @@ body {
 }
 
 .menu-icon {
-  /* display: none; */
   font-size: 24px;
   cursor: pointer;
   margin-left: 20px;
