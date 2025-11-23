@@ -6,9 +6,9 @@
     <title>
       Zerodha: Online brokerage platform for stock trading & investing
     </title>
-    <link rel="icon" href="assets/favicon.png" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
@@ -18,20 +18,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-
   <body>
     <!-- Header Section -->
     <header class="navbar">
       <div class="nav-container">
         <img src="assets/logo.svg" alt="Zerodha Logo" class="logo" />
-        <nav class="nav-links">
+        <nav class="nav-links" id="nav-links">
           <a href="#">Signup</a>
           <a href="about.html">About</a>
           <a href="#">Products</a>
           <a href="#">Pricing</a>
           <a href="#">Support</a>
-          <span class="menu-icon">☰</span>
         </nav>
+        <span
+          class="menu-icon"
+          id="menu-icon"
+          aria-label="Open navigation menu"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          >☰</span
+        >
       </div>
     </header>
 
@@ -39,8 +45,8 @@
     <section class="hero">
       <div class="container center">
         <img
-          src="assets/landing.png"
-          alt="Dashboard Preview"
+          src="./assets/landing.svg"
+          alt="Zerodha dashboard preview for online trading"
           class="dashboard-img"
         />
         <h1>Invest in everything</h1>
@@ -90,7 +96,7 @@
       </div>
       <div class="trust-visual">
         <img
-          src="assets/ecosystem.png"
+          src="./assets/ecosystem.png"
           alt="Zerodha ecosystem"
           id="ecosystem-pic"
         />
@@ -103,7 +109,7 @@
 
     <!-- News Section -->
     <section class="news-section">
-      <img src="assets/press-logos.png" alt="Press logos" id="press-logo" />
+      <img src="./assets/press-logos.png" alt="Press logos" id="press-logo" />
     </section>
 
     <!-- Price Section -->
@@ -119,9 +125,9 @@
         </div>
       </div>
       <div class="price-visual">
-        <img src="assets/pricing-eq.svg" alt="pricing" class="price-img" />
+        <img src="./assets/pricing-eq.svg" alt="pricing" class="price-img" />
         <p>Free account opening</p>
-        <img src="assets/pricing-eq.svg" alt="pricing" class="price-img" />
+        <img src="./assets/pricing-eq.svg" alt="pricing" class="price-img" />
         <p>Free equity delivery and direct mutual funds</p>
         <img
           src="assets/other-trades.svg"
@@ -135,7 +141,7 @@
     <!-- Education Section -->
     <section class="education-section">
       <div class="education-visual">
-        <img src="assets/index-education.svg" alt="education" />
+        <img src="./assets/index-education.svg" alt="education" />
       </div>
 
       <div class="education-text">
@@ -242,28 +248,24 @@
           Broking Ltd. Registered Address: #153/154, 4th Cross, Dollars Colony,
           Bengaluru - 560078, Karnataka, India. For complaints write to
           <a href="mailto:complaints@zerodha.com">complaints@zerodha.com</a>,
-          for DP related to <a href="">dp@zerodha.com</a>. Please ensure you
-          carefully read the Risk Disclosure Document as prescribed by SEBI |
-          ICF
+          for DP related to <a href="mailto:dp@zerodha.com">dp@zerodha.com</a>.
+          Please ensure you carefully read the Risk Disclosure Document as
+          prescribed by SEBI | ICF
         </p>
-        <br />
         <p>
-          Procedure to file a complaint on <a href>SEBI SCORES</a> Register on
-          SCORES portal. Mandatory details for filing complaints on SCORES:
+          Procedure to file a complaint on <a href="">SEBI SCORES</a> Register
+          on SCORES portal. Mandatory details for filing complaints on SCORES:
           Name, PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
           Communication, Speedy redressal of the grievances
         </p>
-        <br />
         <p>
           <a href="#">Smart Online Dispute Resolution</a> |
           <a href="#">Grievances Redressal Mechanism</a>
         </p>
-        <br />
         <p>
           Investments in securities market are subject to market risks; read all
           related documents carefully before investing.
         </p>
-        <br />
         <p>
           Attention investors: 1) Stock brokers can accept securities as margins
           from clients only by way of pledge in the depository system w.e.f
@@ -273,12 +275,10 @@
           Check your securities / MF / bonds in the consolidated account
           statement issued by NSDL/CDSL every month.
         </p>
-        <br />
         <p>
           India's largest broker based on networth as per NSE.
           <a href="">NSE broker factsheet</a>
         </p>
-        <br />
         <p>
           Prevent unauthorised transactions in your account. Update your mobile
           numbers/email IDs with your stock brokers. Receive information of your

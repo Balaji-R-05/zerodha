@@ -19,5 +19,5 @@ A fully responsive clone of Zerodha’s landing page to replicate the user inter
 
 # References
 
-- https://zerodha.com/
+- https://zerodha.com
 - https://developer.mozilla.org/en-US/docs/Web
