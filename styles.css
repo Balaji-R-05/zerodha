@@ -22,87 +22,13 @@ body {
 }
 
 .container.center {
-    text-align: center;
+  text-align: center;
 }
 
 
 
 
-/* ==============================
-   Navbar
-============================== */
-.navbar {
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-  height: 20px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  margin-left: 20px;
-  font-size: 18px;
-}
-
-.nav-links a:hover {
-  color: #387ed1;
-  border-bottom: 2px solid #2962ff;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  margin-left: 20px;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 70px;
-    flex-direction: column;
-    background: #fff;
-    padding: 15px 20px;
-    border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-}
 
 
 
@@ -134,11 +60,11 @@ body {
 
 .footer-brand {
   flex: 1 1 200px;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   /* border: 2px solid black; */
 }
 
@@ -300,9 +226,3 @@ Utilities
   font-weight: 400 !important;
   border-bottom: 2px solid blue;
 }
-
-
-
-
-
-

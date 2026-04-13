@@ -1,0 +1,106 @@
+.pricing-hero {
+  padding: 80px 20px;
+}
+
+.pricing-hero h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.pricing-hero .subtitle {
+  font-size: 20px;
+  color: #666;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+}
+
+.price-card {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-8px);
+}
+
+.price-card img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.price-card h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.price-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.pricing-table-section {
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #444;
+  font-weight: 500;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.charges-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.charges-table th, .charges-table td {
+  padding: 24px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.charges-table th {
+  font-weight: 600;
+  color: #444;
+  background-color: #fbfbfb;
+}
+
+.charges-table td {
+  color: #666;
+}
+
+.free-text {
+  color: #387ed1;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price-card {
+    max-width: 400px;
+  }
+}

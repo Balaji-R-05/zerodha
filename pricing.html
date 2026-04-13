@@ -4,14 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Our company, history and the people behind it.</title>
-
-  <link rel="icon" href="assets/brand/favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="./styles/about.css?v=2" />
+  <title>Zerodha brokerage charges, fees, and taxes on trading and investing</title>
+  <link rel="icon" href="./assets/brand/favicon.png" />
+  <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./styles/navbar.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/pricing.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
@@ -22,9 +20,9 @@
       <a href="index.html"><img src="assets/brand/logo.svg" alt="Zerodha Logo" class="logo" /></a>
       <nav class="nav-links">
         <a href="signup.html">Signup</a>
-        <a href="about.html" class="active">About</a>
+        <a href="about.html">About</a>
         <a href="products.html">Products</a>
-        <a href="pricing.html">Pricing</a>
+        <a href="pricing.html" class="active">Pricing</a>
         <a href="support.html">Support</a>
       </nav>
       <div class="menu-icon" id="menu-icon">
@@ -95,127 +93,64 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container center">
-      <h2>
-        We pioneered the discount broking model in India.<br />
-        Now, we are breaking ground with our technology.
-      </h2>
+  <!-- Pricing Hero -->
+  <section class="pricing-hero text-center">
+    <div class="container">
+      <h1>Pricing</h1>
+      <p class="subtitle">Free equity investments and flat ₹20 intraday and F&O trades</p>
     </div>
   </section>
 
-  <!-- About-section -->
-  <section class="about-section">
-    <div class="about-text">
-      <p>
-        We kick-started operations on the 15th of August, 2010 with the goal
-        of breaking all barriers that traders and investors face in India in
-        terms of cost, support, and technology. We named the company Zerodha,
-        a combination of Zero and "Rodha", the Sanskrit word for barrier.
-      </p>
-      <p>
-        Today, our disruptive pricing models and in-house technology have made
-        us the biggest stock broker in India.
-      </p>
-      <p>
-        Over 1.6+ crore clients place billions of orders every year through
-        our powerful ecosystem of investment platforms, contributing over 15%
-        of all Indian retail trading volumes.
-      </p>
+  <!-- Pricing Cards -->
+  <section class="pricing-cards container">
+    <div class="price-card">
+      <img src="assets/pricing/pricing-eq.svg" alt="Free Equity" />
+      <h2>Free equity delivery</h2>
+      <p>All equity delivery investments (NSE, BSE), are absolutely free — ₹0 brokerage.</p>
     </div>
-    <div class="about-text">
-      <p>
-        In addition, we run a number of popular open online educational and
-        community initiatives to empower retail traders and investors.
-      </p>
-      <p>
-        <a href="#">Rainmatter</a>, our fintech fund and incubator, has
-        invested in several fintech startups with the goal of growing the
-        Indian capital markets.
-      </p>
-      <p>
-        And yet, we are always up to something new every day. Catch up on the
-        latest updates on our <a href="#">blog</a> or see what the media is
-        <a href="#">saying about us</a> or learn more about our business and
-        product <a href="#">philosophies</a>.
-      </p>
+    <div class="price-card">
+      <img src="assets/pricing/other-trades.svg" alt="Intraday Trades" />
+      <h2>Intraday and F&O trades</h2>
+      <p>Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity, currency, and
+        commodity trades. Flat ₹20 on all option trades.</p>
+    </div>
+    <div class="price-card">
+      <img src="assets/pricing/pricing-eq.svg" alt="Free Direct MF" />
+      <h2>Free direct mutual funds</h2>
+      <p>All direct mutual fund investments are absolutely free — ₹ 0 commissions & ₹ 0 brokerage.</p>
     </div>
   </section>
 
-  <!-- People Section -->
-  <section class="people-section">
-    <h2 class="people-title">People</h2>
-
-    <!-- Featured Profile: Nithin Kamath -->
-    <div class="featured-profile">
-      <div class="featured-img">
-        <img src="assets/people/nithin-kamath.jpg" alt="Nithin Kamath" />
-      </div>
-      <div class="featured-info">
-        <h3>Nithin Kamath</h3>
-        <h4>Founder, CEO</h4>
-        <p>
-          Nithin bootstrapped and founded Zerodha in 2010 to overcome the hurdles he faced during his decade-long stint
-          as a trader. Today, Zerodha is India’s largest stock broker.
-        </p>
-        <p>
-          In addition to Zerodha, Nithin has founded Rainmatter, a fintech fund and incubator that has invested in over
-          60 startups.
-        </p>
-        <p>
-          He is also a member of the SEBI Secondary Market Advisory Committee (SMAC) and the Market Data Advisory
-          Committee (MDAC).
-        </p>
-        <p>
-          Connect on <a href="#">Homepage</a> / <a href="#">TradingQ&A</a> / <a href="#">Twitter</a>
-        </p>
-      </div>
-    </div>
-
-    <!-- Team Grid -->
-    <div class="team-grid">
-      <!-- Nikhil Kamath -->
-      <div class="team-card">
-        <img src="assets/people/Nikhil.jpg" alt="Nikhil Kamath" />
-        <h4>Nikhil Kamath</h4>
-        <p>Co-founder & CFO</p>
-      </div>
-
-      <!-- Kailash Nadh -->
-      <div class="team-card">
-        <img src="assets/people/Kailash.jpg" alt="Dr. Kailash Nadh" />
-        <h4>Dr. Kailash Nadh</h4>
-        <p>CTO</p>
-      </div>
-
-      <!-- Venu Madhav -->
-      <div class="team-card">
-        <img src="assets/people/Venu.jpg" alt="Venu Madhav" />
-        <h4>Venu Madhav</h4>
-        <p>COO</p>
-      </div>
-
-      <!-- Seema Patil -->
-      <div class="team-card">
-        <img src="assets/people/Seema.jpg" alt="Seema Patil" />
-        <h4>Seema Patil</h4>
-        <p>Director</p>
-      </div>
-
-      <!-- Karthik Rangappa -->
-      <div class="team-card">
-        <img src="assets/people/karthik.jpg" alt="Karthik Rangappa" />
-        <h4>Karthik Rangappa</h4>
-        <p>Director</p>
-      </div>
-
-      <!-- Austin Prakesh -->
-      <div class="team-card">
-        <img src="assets/people/Austin.jpg" alt="Austin Prakesh" />
-        <h4>Austin Prakesh</h4>
-        <p>Director</p>
-      </div>
+  <!-- Pricing Table (Skeleton) -->
+  <section class="pricing-table-section container">
+    <h2 class="section-title text-center">Charges for account opening</h2>
+    <div class="table-container">
+      <table class="charges-table">
+        <thead>
+          <tr>
+            <th>Type of account</th>
+            <th>Charges</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Online account</td>
+            <td><span class="free-text">FREE</span></td>
+          </tr>
+          <tr>
+            <td>Offline account</td>
+            <td><span class="free-text">FREE</span></td>
+          </tr>
+          <tr>
+            <td>NRI account (offline only)</td>
+            <td>₹ 500</td>
+          </tr>
+          <tr>
+            <td>Partnership, LLP, HUF, or Corporate accounts (offline only)</td>
+            <td>₹ 500</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -354,7 +289,7 @@
       </ul>
     </div>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 

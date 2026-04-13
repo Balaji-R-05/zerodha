@@ -1,0 +1,137 @@
+.signup-container {
+  padding: 80px 20px;
+}
+
+.signup-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.signup-visual {
+  flex: 1;
+  max-width: 600px;
+  text-align: right;
+}
+
+.signup-visual img {
+  max-width: 100%;
+  height: auto;
+}
+
+.signup-form-card {
+  flex: 1;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.signup-form-card h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.signup-form-card .subtitle {
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-bottom: 40px;
+}
+
+.input-group {
+  margin-bottom: 24px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #9b9b9b;
+  margin-bottom: 8px;
+}
+
+.mobile-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+
+.mobile-input .prefix {
+  font-size: 16px;
+  color: #444;
+  margin-right: 12px;
+  padding-right: 12px;
+  border-right: 1px solid #eee;
+}
+
+.mobile-input input {
+  flex: 1;
+  padding: 16px 0;
+  border: none;
+  font-size: 16px;
+  color: #444;
+  outline: none;
+}
+
+.disclaimer {
+  font-size: 13px;
+  color: #9b9b9b;
+  margin-bottom: 24px;
+}
+
+.cta-button {
+  width: 100%;
+  padding: 16px;
+  background-color: #387ed1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.cta-button:hover {
+  background-color: #104590;
+}
+
+.secondary-link {
+  display: block;
+  text-align: left;
+  color: #387ed1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signup-info {
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+}
+
+.signup-info p {
+  font-size: 13px;
+  color: #9b9b9b;
+}
+
+.signup-info a {
+  color: #387ed1;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .signup-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .signup-visual {
+    text-align: center;
+  }
+  .signup-form-card {
+    text-align: left;
+  }
+}

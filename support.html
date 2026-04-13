@@ -4,14 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Our company, history and the people behind it.</title>
-
-  <link rel="icon" href="assets/brand/favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="./styles/about.css?v=2" />
+  <title>Zerodha Support Portal: Find answers to all your queries</title>
+  <link rel="icon" href="./assets/brand/favicon.png" />
+  <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./styles/navbar.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/support.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
@@ -22,10 +20,10 @@
       <a href="index.html"><img src="assets/brand/logo.svg" alt="Zerodha Logo" class="logo" /></a>
       <nav class="nav-links">
         <a href="signup.html">Signup</a>
-        <a href="about.html" class="active">About</a>
+        <a href="about.html">About</a>
         <a href="products.html">Products</a>
         <a href="pricing.html">Pricing</a>
-        <a href="support.html">Support</a>
+        <a href="support.html" class="active">Support</a>
       </nav>
       <div class="menu-icon" id="menu-icon">
         <span></span>
@@ -95,126 +93,98 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container center">
-      <h2>
-        We pioneered the discount broking model in India.<br />
-        Now, we are breaking ground with our technology.
-      </h2>
+  <!-- Support Hero -->
+  <section class="support-hero">
+    <div class="container hero-wrapper">
+      <div class="hero-left">
+        <h1>Support Portal</h1>
+        <p>Search for an answer or browse help topics to create a ticket</p>
+        <div class="search-container">
+          <input type="text" placeholder="Eg: how do i activate equity, order help, etc" />
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="quick-links">
+          <a href="#">Track account opening</a>
+          <a href="#">Track segment activation</a>
+          <a href="#">Intraday leverage</a>
+          <a href="#">Kite user manual</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <a href="#" class="featured-link">Featured</a>
+        <ol>
+          <li><a href="#">Surveillance measure on scripts - April 2026</a></li>
+          <li><a href="#">Latest circulars & updates</a></li>
+        </ol>
+      </div>
     </div>
   </section>
 
-  <!-- About-section -->
-  <section class="about-section">
-    <div class="about-text">
-      <p>
-        We kick-started operations on the 15th of August, 2010 with the goal
-        of breaking all barriers that traders and investors face in India in
-        terms of cost, support, and technology. We named the company Zerodha,
-        a combination of Zero and "Rodha", the Sanskrit word for barrier.
-      </p>
-      <p>
-        Today, our disruptive pricing models and in-house technology have made
-        us the biggest stock broker in India.
-      </p>
-      <p>
-        Over 1.6+ crore clients place billions of orders every year through
-        our powerful ecosystem of investment platforms, contributing over 15%
-        of all Indian retail trading volumes.
-      </p>
-    </div>
-    <div class="about-text">
-      <p>
-        In addition, we run a number of popular open online educational and
-        community initiatives to empower retail traders and investors.
-      </p>
-      <p>
-        <a href="#">Rainmatter</a>, our fintech fund and incubator, has
-        invested in several fintech startups with the goal of growing the
-        Indian capital markets.
-      </p>
-      <p>
-        And yet, we are always up to something new every day. Catch up on the
-        latest updates on our <a href="#">blog</a> or see what the media is
-        <a href="#">saying about us</a> or learn more about our business and
-        product <a href="#">philosophies</a>.
-      </p>
-    </div>
-  </section>
-
-  <!-- People Section -->
-  <section class="people-section">
-    <h2 class="people-title">People</h2>
-
-    <!-- Featured Profile: Nithin Kamath -->
-    <div class="featured-profile">
-      <div class="featured-img">
-        <img src="assets/people/nithin-kamath.jpg" alt="Nithin Kamath" />
+  <!-- Support Categories -->
+  <section class="support-categories container">
+    <div class="category-grid">
+      <div class="category-item">
+        <h3><i class="fa-solid fa-circle-plus"></i> Account Opening</h3>
+        <ul>
+          <li><a href="#">Getting Started</a></li>
+          <li><a href="#">Online Account Opening</a></li>
+          <li><a href="#">Offline Account Opening</a></li>
+          <li><a href="#">Charges</a></li>
+          <li><a href="#">Company, Partnership and HUF</a></li>
+          <li><a href="#">Non Resident Indian (NRI)</a></li>
+        </ul>
       </div>
-      <div class="featured-info">
-        <h3>Nithin Kamath</h3>
-        <h4>Founder, CEO</h4>
-        <p>
-          Nithin bootstrapped and founded Zerodha in 2010 to overcome the hurdles he faced during his decade-long stint
-          as a trader. Today, Zerodha is India’s largest stock broker.
-        </p>
-        <p>
-          In addition to Zerodha, Nithin has founded Rainmatter, a fintech fund and incubator that has invested in over
-          60 startups.
-        </p>
-        <p>
-          He is also a member of the SEBI Secondary Market Advisory Committee (SMAC) and the Market Data Advisory
-          Committee (MDAC).
-        </p>
-        <p>
-          Connect on <a href="#">Homepage</a> / <a href="#">TradingQ&A</a> / <a href="#">Twitter</a>
-        </p>
+      <div class="category-item">
+        <h3><i class="fa-regular fa-user"></i> Your Zerodha Account</h3>
+        <ul>
+          <li><a href="#">Login Credentials</a></li>
+          <li><a href="#">Your Profile</a></li>
+          <li><a href="#">Account Modification and Segment Addition</a></li>
+          <li><a href="#">CMR & DP ID</a></li>
+          <li><a href="#">Nomination</a></li>
+          <li><a href="#">Transfer and Conversion of Securities</a></li>
+        </ul>
       </div>
-    </div>
-
-    <!-- Team Grid -->
-    <div class="team-grid">
-      <!-- Nikhil Kamath -->
-      <div class="team-card">
-        <img src="assets/people/Nikhil.jpg" alt="Nikhil Kamath" />
-        <h4>Nikhil Kamath</h4>
-        <p>Co-founder & CFO</p>
+      <div class="category-item">
+        <h3><i class="fa-solid fa-chart-line"></i> Trading and Platforms</h3>
+        <ul>
+          <li><a href="#">Trading Q&A</a></li>
+          <li><a href="#">Kite</a></li>
+          <li><a href="#">Margins</a></li>
+          <li><a href="#">Product and Order Types</a></li>
+          <li><a href="#">Corporate Actions</a></li>
+          <li><a href="#">Kite Features</a></li>
+        </ul>
       </div>
-
-      <!-- Kailash Nadh -->
-      <div class="team-card">
-        <img src="assets/people/Kailash.jpg" alt="Dr. Kailash Nadh" />
-        <h4>Dr. Kailash Nadh</h4>
-        <p>CTO</p>
+      <div class="category-item">
+        <h3><i class="fa-solid fa-wallet"></i> Funds</h3>
+        <ul>
+          <li><a href="#">Fund Withdrawal</a></li>
+          <li><a href="#">Adding Funds</a></li>
+          <li><a href="#">Adding Bank Accounts</a></li>
+          <li><a href="#">eMandates</a></li>
+        </ul>
       </div>
-
-      <!-- Venu Madhav -->
-      <div class="team-card">
-        <img src="assets/people/Venu.jpg" alt="Venu Madhav" />
-        <h4>Venu Madhav</h4>
-        <p>COO</p>
+      <div class="category-item">
+        <h3><i class="fa-solid fa-circle-notch"></i> Console</h3>
+        <ul>
+          <li><a href="#">IPO</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Funds Statement</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Referral Program</a></li>
+        </ul>
       </div>
-
-      <!-- Seema Patil -->
-      <div class="team-card">
-        <img src="assets/people/Seema.jpg" alt="Seema Patil" />
-        <h4>Seema Patil</h4>
-        <p>Director</p>
-      </div>
-
-      <!-- Karthik Rangappa -->
-      <div class="team-card">
-        <img src="assets/people/karthik.jpg" alt="Karthik Rangappa" />
-        <h4>Karthik Rangappa</h4>
-        <p>Director</p>
-      </div>
-
-      <!-- Austin Prakesh -->
-      <div class="team-card">
-        <img src="assets/people/Austin.jpg" alt="Austin Prakesh" />
-        <h4>Austin Prakesh</h4>
-        <p>Director</p>
+      <div class="category-item">
+        <h3><i class="fa-solid fa-coins"></i> Coin</h3>
+        <ul>
+          <li><a href="#">Understanding Mutual Funds</a></li>
+          <li><a href="#">About Coin</a></li>
+          <li><a href="#">Buying and Selling</a></li>
+          <li><a href="#">Starting an SIP</a></li>
+          <li><a href="#">Managing Your Portfolio</a></li>
+          <li><a href="#">Coin App</a></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -354,7 +324,7 @@
       </ul>
     </div>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 

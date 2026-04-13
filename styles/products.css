@@ -1,0 +1,199 @@
+.hero-section {
+  padding: 80px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.hero-section .subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.hero-section .desc {
+  font-size: 16px;
+  color: #444;
+}
+
+.primary-link {
+  color: #387ed1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.primary-link:hover {
+  color: #2c6bb8;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ==============================
+   Products Zigzag Grid
+   ============================== */
+
+.products-grid {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+  gap: 10px;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 40px;
+  /* border: 2px solid black; */
+}
+
+.product-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.product-visual {
+  flex: 1.2;
+  text-align: center;
+}
+
+.product-visual img {
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.product-info p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.product-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* ==============================
+   Zerodha Universe Section
+   ============================== */
+
+.universe-section {
+  padding: 100px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.universe-section h2.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.universe-section .subtitle {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 80px;
+}
+
+.universe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 80px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.universe-item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  padding: 20px;
+}
+
+.universe-item:hover {
+  transform: translateY(-5px);
+}
+
+.universe-item img {
+  max-width: 180px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.universe-item p {
+  font-size: 13px;
+  color: #9b9b9b;
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #387ed1;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #2c6bb8;
+}
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+@media (max-width: 992px) {
+  .product-item, .product-item.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .product-links {
+    justify-content: center;
+  }
+
+  .universe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .universe-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,141 @@
+
+
+.support-hero {
+  background-color: #387ed1;
+  color: #fff;
+  padding: 60px 0 100px 0;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-left {
+  flex: 2;
+}
+
+.hero-left h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.hero-left p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.search-container {
+  position: relative;
+  max-width: 90%;
+  margin-bottom: 24px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 16px 20px 16px 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #444;
+}
+
+.search-container i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9b9b9b;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #fff;
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.featured-link {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+}
+
+.hero-right ol {
+  padding-left: 20px;
+}
+
+.hero-right li {
+  margin-bottom: 12px;
+}
+
+.hero-right li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.support-categories {
+  padding: 80px 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+}
+
+.category-item h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.category-item h3 i {
+  margin-right: 12px;
+  color: #9b9b9b;
+}
+
+.category-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-item li {
+  margin-bottom: 12px;
+}
+
+.category-item a {
+  color: #387ed1;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.category-item a:hover {
+  color: #444;
+}
+
+@media (max-width: 992px) {
+  .hero-wrapper {
+    flex-direction: column;
+  }
+}
