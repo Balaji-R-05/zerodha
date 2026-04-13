@@ -31,3 +31,22 @@ if (menuIcon && megaMenu) {
         }
     };
 }
+
+// FAQ Accordion Logic
+const faqItems = document.querySelectorAll('.faq-item');
+if (faqItems.length > 0) {
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close other items
+            faqItems.forEach(i => i.classList.remove('active'));
+            
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+}

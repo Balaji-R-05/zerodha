@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  color: #222;
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+/* Reusable container */
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container.center {
+  text-align: center;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.active {
+  color: var(--primary) !important;
+  font-weight: 400 !important;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Common Section Titles */
+.section-title {
+  text-align: center;
+  font-size: var(--h2-size);
+  font-weight: 500;
+  color: var(--text-main);
+  margin-bottom: var(--gap-lg);
+}
+
+/* Call to Action Button */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--white) !important; /* Ensure visibility */
+  padding: 14px 32px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: var(--body-size);
+  font-weight: 500;
+  text-align: center;
+  border: none; /* Reset for button tags */
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-main); /* Ensure font consistency */
+}
+
+.cta-button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: var(--white) !important;
+}

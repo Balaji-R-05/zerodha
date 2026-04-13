@@ -3,8 +3,8 @@
    ============================== */
 
 .navbar {
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  max-width: 1200px;
+  max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -36,20 +36,20 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #666;
-  font-size: 14px;
+  color: var(--text-light);
+  font-size: var(--small-size);
   font-weight: 400;
-  transition: color 0.2s;
+  transition: var(--transition);
 }
 
 .nav-links a:hover {
-  color: #387ed1;
+  color: var(--primary);
 }
 
 .nav-links a.active {
-  color: #387ed1;
+  color: var(--primary);
   font-weight: 500;
-  border-bottom: none; /* Remove any default border-bottom if inherited */
+  border-bottom: none;
 }
 
 /* ==============================
@@ -59,15 +59,15 @@
 .mega-menu {
   position: fixed;
   top: 70px;
-  right: 5%; /* Aligned to the right-ish side */
-  width: 800px; /* Reduced width for a cleaner dropdown look */
+  right: 5%;
+  width: 800px;
   max-width: 90vw;
-  background-color: #fff;
+  background-color: var(--white);
   z-index: 1000;
   display: none;
-  box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-lg);
   border-radius: 4px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid var(--border);
   overflow: hidden;
 }
 
@@ -81,26 +81,47 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Mobile Nav section inside Mega Menu */
+.menu-mobile-nav {
+  display: none;
+  padding: 30px 40px;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg-light);
+}
+
+.menu-mobile-nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 30px;
+  transition: var(--transition);
+}
+
+.menu-mobile-nav a:hover {
+  color: var(--primary);
+}
+
 /* Two-tier structure */
 .menu-top-tier {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 40px;
-  border-bottom: 1px solid #f9f9f9;
-  background-color: #fff;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--white);
 }
 
 .menu-bottom-tier {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 40px;
-  background-color: #fbfbfb; /* Subtle background for bottom tier */
+  background-color: var(--bg-light);
 }
 
 /* Column Styles */
 .menu-col h4 {
   font-size: 14px;
-  color: #444;
+  color: var(--text-main);
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -109,7 +130,7 @@
 .product-item-mini {
   text-align: center;
   padding: 10px;
-  transition: transform 0.2s;
+  transition: var(--transition);
   text-decoration: none;
   display: block;
 }
@@ -119,21 +140,21 @@
 }
 
 .product-item-mini img {
-  width: 40px; /* Larger icons as per screenshot */
+  width: 40px;
   height: 40px;
   margin-bottom: 15px;
 }
 
 .product-item-mini h5 {
   font-size: 15px;
-  color: #444;
+  color: var(--text-main);
   margin-bottom: 4px;
   font-weight: 500;
 }
 
 .product-item-mini p {
   font-size: 12px;
-  color: #9b9b9b;
+  color: var(--text-muted);
 }
 
 /* Menu Lists (Bottom Tier) */
@@ -148,13 +169,13 @@
 
 .menu-list a {
   text-decoration: none;
-  color: #666;
+  color: var(--text-light);
   font-size: 13px;
-  transition: color 0.2s;
+  transition: var(--transition);
 }
 
 .menu-list a:hover {
-  color: #387ed1;
+  color: var(--primary);
 }
 
 /* Education Section specific icons */
@@ -173,11 +194,11 @@
 
 .education-item span {
   font-size: 13px;
-  color: #666;
+  color: var(--text-light);
 }
 
 .education-item:hover span {
-  color: #387ed1;
+  color: var(--primary);
 }
 
 /* Mobile Icon adjustments */
@@ -185,7 +206,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  display: flex !important; /* Force visibility on desktop */
+  display: flex !important;
   flex-direction: column;
   justify-content: space-between;
   padding: 2px;
@@ -196,8 +217,8 @@
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #666;
-  transition: 0.3s;
+  background-color: var(--text-light);
+  transition: var(--transition);
 }
 
 .menu-icon.open span:nth-child(1) {
@@ -215,7 +236,13 @@
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .nav-links {
-    display: none; /* Hide horizontal links on tablet/mobile */
+    display: none;
+  }
+  .menu-mobile-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 30px;
   }
   .mega-menu {
     width: 90vw;

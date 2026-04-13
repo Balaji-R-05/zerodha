@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Open a free demat and trading account online at Zerodha</title>
   <link rel="icon" href="./assets/brand/favicon.png" />
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./styles/navbar.css" />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/navbar.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
   <link rel="stylesheet" href="./styles/signup.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -34,6 +36,13 @@
 
     <!-- Mega Menu Dropdown -->
     <div class="mega-menu" id="mega-menu">
+      <div class="menu-mobile-nav">
+        <a href="signup.html">Signup</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="support.html">Support</a>
+      </div>
       <!-- Top Tier: Products -->
       <div class="menu-top-tier">
         <a href="products.html" class="product-item-mini">
@@ -93,33 +102,193 @@
     </div>
   </header>
 
-  <main class="signup-container container">
-    <div class="signup-wrapper">
-      <div class="signup-visual">
-        <img src="assets/home/account_open.svg" alt="Signup Illustration" />
-      </div>
-      <div class="signup-form-card">
-        <h1>Signup now</h1>
-        <p class="subtitle">Or track your existing application.</p>
+  <main class="signup-container">
+    <section class="signup-hero container">
+      <div class="signup-wrapper">
+        <div class="signup-visual">
+          <img src="assets/home/account_open.svg" alt="Signup Illustration" />
+        </div>
+        <div class="signup-form-card">
+          <h1>Signup now</h1>
+          <p class="subtitle">Or track your existing application.</p>
 
-        <form id="signup-form">
-          <div class="input-group">
-            <label for="mobile">Mobile number</label>
-            <div class="mobile-input">
-              <span class="prefix">+91</span>
-              <input type="tel" id="mobile" maxlength="10" placeholder="Your mobile number" required />
+          <form id="signup-form">
+            <div class="input-group">
+              <label for="mobile">Mobile number</label>
+              <div class="mobile-input">
+                <span class="prefix">+91</span>
+                <input type="tel" id="mobile" maxlength="10" placeholder="Your mobile number" required />
+              </div>
             </div>
-          </div>
-          <p class="disclaimer">You will receive an OTP on your number</p>
-          <button type="submit" class="cta-button">Continue</button>
-          <a href="#" class="secondary-link">Want to open an NRI account?</a>
-        </form>
+            <p class="disclaimer">You will receive an OTP on your number</p>
+            <button type="submit" class="cta-button">Continue</button>
+            <a href="#" class="secondary-link">Want to open an NRI account?</a>
+          </form>
+        </div>
       </div>
-    </div>
+      <div class="signup-info text-center">
+        <p>By proceeding, you agree to the <a href="#">Term and Conditions</a></p>
+      </div>
+    </section>
 
-    <div class="signup-info text-center">
-      <p>By proceeding, you agree to the <a href="#">Term and Conditions</a></p>
-    </div>
+    <!-- Investment Options Section -->
+    <section class="investment-options container">
+      <h2 class="section-title">Investment options with Zerodha demat account</h2>
+      <div class="options-grid">
+        <div class="option-item">
+          <img src="assets/sign-up/stocks-acop.svg" alt="Stocks" class="option-img" />
+          <div class="option-text">
+            <h3>Stocks</h3>
+            <p>Invest in all exchange-listed securities</p>
+          </div>
+        </div>
+        <div class="option-item">
+          <img src="assets/sign-up/mf-acop.svg" alt="Mutual Funds" class="option-img" />
+          <div class="option-text">
+            <h3>Mutual funds</h3>
+            <p>Invest in commission-free direct mutual funds</p>
+          </div>
+        </div>
+        <div class="option-item">
+          <img src="assets/sign-up/ipo-acop.svg" alt="IPO" class="option-img" />
+          <div class="option-text">
+            <h3>IPO</h3>
+            <p>Apply to the latest IPOs instantly via UPI</p>
+          </div>
+        </div>
+        <div class="option-item">
+          <img src="assets/sign-up/fo-acop.svg" alt="Futures & options" class="option-img" />
+          <div class="option-text">
+            <h3>Futures & options</h3>
+            <p>Hedge and mitigate market risk through simplified F&O trading</p>
+          </div>
+        </div>
+      </div>
+      <div class="options-footer text-center">
+        <a href="#" class="explore-btn">Explore Investments</a>
+      </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+      <div class="container">
+        <h2 class="section-title">Steps to open a demat account</h2>
+        <div class="steps-grid">
+          <div class="step-item">
+            <span class="step-number">1</span>
+            <h3>Enter details</h3>
+            <p>Fill in your basic information and verify your mobile number.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-number">2</span>
+            <h3>Complete KYC</h3>
+            <p>Upload your documents and complete the E-sign process.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-number">3</span>
+            <h3>Start investing</h3>
+            <p>Your account will be verified and you can start trading.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section container">
+      <div class="benefits-visual">
+        <img src="assets/sign-up/acop-benefits.svg" alt="Benefits of Zerodha" class="benefits-img" />
+        <h2 class="benefits-title">Benefits of opening a Zerodha demat account</h2>
+      </div>
+      
+      <div class="benefits-content">
+        <div class="benefit-item">
+          <h3>Unbeatable pricing</h3>
+          <p>Zero charges for equity & mutual fund investments. Flat ₹20 fees for intraday and F&O trades.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>Best investing experience</h3>
+          <p>Simple and intuitive trading platform with an easy-to-understand user interface.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>No spam or gimmicks</h3>
+          <p>Committed to transparency — no gimmicks, spam, "gamification", or intrusive push notifications.</p>
+        </div>
+        <div class="benefit-item">
+          <h3>The Zerodha universe</h3>
+          <p>More than just an app — gain free access to the entire ecosystem of our partner products.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialized Account Types -->
+    <section class="account-types container">
+      <h2 class="section-title">Explore different account types</h2>
+      <div class="account-grid">
+        <a href="#" class="account-card">
+          <i class="fas fa-user-graduate"></i>
+          <h3>Minor</h3>
+          <p>Invest for your children's future.</p>
+        </a>
+        <a href="#" class="account-card">
+          <i class="fas fa-globe-americas"></i>
+          <h3>NRI</h3>
+          <p>Invest in India from anywhere in the world.</p>
+        </a>
+        <a href="#" class="account-card">
+          <i class="fas fa-building"></i>
+          <h3>Corporate</h3>
+          <p>Open an account for your company.</p>
+        </a>
+        <a href="#" class="account-card">
+          <i class="fas fa-users"></i>
+          <h3>HUF / Joint</h3>
+          <p>Accounts for families and joint holders.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faq-section container">
+      <h2 class="section-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What documents are required to open an account?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>You need your PAN card, Aadhaar card, and a cancelled cheque or bank statement. Aadhaar must be linked to your mobile number for E-sign.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are there any annual maintenance charges (AMC)?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Zerodha charges a nominal AMC of ₹300 per year, billed quarterly, to maintain your demat account.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take to open an account?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>The online process takes about 15 minutes. Once submitted, your account is typically activated within 24-48 working hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta text-center">
+      <div class="container center">
+        <h2>Open a Zerodha account</h2>
+        <p>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.</p>
+        <button class="cta-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Sign up for free</button>
+      </div>
+    </section>
   </main>
 
   <!-- Footer Section -->

@@ -1,33 +1,37 @@
+/* Hero Section */
 .pricing-hero {
   padding: 80px 20px;
+  text-align: center;
 }
 
 .pricing-hero h1 {
-  font-size: 48px;
+  font-size: var(--h1-size);
   font-weight: 500;
   margin-bottom: 12px;
-  color: #444;
+  color: var(--text-main);
 }
 
 .pricing-hero .subtitle {
-  font-size: 20px;
-  color: #666;
+  font-size: var(--h3-size);
+  color: var(--text-muted);
 }
 
 .pricing-cards {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: var(--gap-lg);
   padding: 40px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border);
   padding-bottom: 80px;
+  max-width: var(--container-width);
+  margin: 0 auto;
 }
 
 .price-card {
   flex: 1;
   text-align: center;
   padding: 20px;
-  transition: transform 0.3s ease;
+  transition: var(--transition);
 }
 
 .price-card:hover {
@@ -41,26 +45,29 @@
 }
 
 .price-card h2 {
-  font-size: 28px;
+  font-size: var(--h2-size);
   margin-bottom: 16px;
-  color: #444;
+  color: var(--text-main);
 }
 
 .price-card p {
-  font-size: 16px;
-  color: #666;
+  font-size: var(--body-size);
+  color: var(--text-light);
   line-height: 1.6;
 }
 
 .pricing-table-section {
   padding: 80px 20px;
+  max-width: var(--container-width);
+  margin: 0 auto;
 }
 
 .section-title {
-  font-size: 32px;
+  font-size: var(--h2-size);
   margin-bottom: 60px;
-  color: #444;
+  color: var(--text-main);
   font-weight: 500;
+  text-align: center;
 }
 
 .table-container {
@@ -76,22 +83,22 @@
 .charges-table th, .charges-table td {
   padding: 24px;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border);
   font-size: 16px;
 }
 
 .charges-table th {
   font-weight: 600;
-  color: #444;
-  background-color: #fbfbfb;
+  color: var(--text-main);
+  background-color: var(--bg-light);
 }
 
 .charges-table td {
-  color: #666;
+  color: var(--text-light);
 }
 
 .free-text {
-  color: #387ed1;
+  color: var(--primary);
   font-weight: 600;
 }
 
